@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        h2{
+            text-align: center;
+        }
+        .field{
+            margin-top: 150px;
+        }
         .field:hover .bat{
             transform: rotate(-60deg);
             transform-origin: top right;
@@ -14,17 +20,23 @@
             height: 50px;
             width: 50px;
             background-color: red;
-            border-radius: 25px;
-            margin-left: 230px;
+            border-radius: 50%;
+            position: relative;
+            left: 460px;
+            transition: transform .6s ease-out .2s;
         }
         .bat{
-            transition: transform 2s;
+            transition: transform .2s ease-in;
+        }
+        .field:hover .ball{
+            transform: translate(1100px, -300px);
         }
     </style>
 </head>
 <body>
+    <h2>This is a fun game. Here we use transition and transform.</h2>
     <div class="field">
-    <img class="bat" src="bat.png" alt="">
+    <img class="bat" src="image/bat.png" alt="a bat image">
     <div class="ball"></div>
     </div>
 </body>
